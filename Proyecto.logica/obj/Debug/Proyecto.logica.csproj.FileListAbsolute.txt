@@ -1,0 +1,18 @@
+C:\Users\Janner\source\repos\Proyecto\Proyecto.logica\obj\Debug\Proyecto.logica.csprojAssemblyReference.cache
+C:\Users\Janner\source\repos\Proyecto\Proyecto.logica\obj\Debug\Proyecto.logica.csproj.CoreCompileInputs.cache
+C:\Users\Janner\source\repos\Proyecto\Proyecto.logica\bin\Debug\Proyecto.logica.dll
+C:\Users\Janner\source\repos\Proyecto\Proyecto.logica\bin\Debug\Proyecto.logica.pdb
+C:\Users\Janner\source\repos\Proyecto\Proyecto.logica\obj\Debug\Proyecto.logica.dll
+C:\Users\Janner\source\repos\Proyecto\Proyecto.logica\obj\Debug\Proyecto.logica.pdb
+E:\Proyecto\Proyecto.logica\bin\Debug\Proyecto.logica.dll
+E:\Proyecto\Proyecto.logica\bin\Debug\Proyecto.logica.pdb
+E:\Proyecto\Proyecto.logica\obj\Debug\Proyecto.logica.csprojAssemblyReference.cache
+E:\Proyecto\Proyecto.logica\obj\Debug\Proyecto.logica.csproj.CoreCompileInputs.cache
+E:\Proyecto\Proyecto.logica\obj\Debug\Proyecto.logica.dll
+E:\Proyecto\Proyecto.logica\obj\Debug\Proyecto.logica.pdb
+C:\Users\Janner\source\repos\Proyecto - copia\Proyecto.logica\bin\Debug\Proyecto.logica.dll
+C:\Users\Janner\source\repos\Proyecto - copia\Proyecto.logica\bin\Debug\Proyecto.logica.pdb
+C:\Users\Janner\source\repos\Proyecto - copia\Proyecto.logica\obj\Debug\Proyecto.logica.csprojAssemblyReference.cache
+C:\Users\Janner\source\repos\Proyecto - copia\Proyecto.logica\obj\Debug\Proyecto.logica.csproj.CoreCompileInputs.cache
+C:\Users\Janner\source\repos\Proyecto - copia\Proyecto.logica\obj\Debug\Proyecto.logica.dll
+C:\Users\Janner\source\repos\Proyecto - copia\Proyecto.logica\obj\Debug\Proyecto.logica.pdb
