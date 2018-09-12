@@ -4,6 +4,11 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="contenedor" runat="server">
+
+
+    <script  src="../../js/sweetalert.min.js" type="text/javascript"> </script>
+    <link href="../../css/sweetalert.css" rel="stylesheet" type="text/css" />
+
       <div class="mx-auto mt-5">
         <%---primera secion----%>
          <div class="form-group">
