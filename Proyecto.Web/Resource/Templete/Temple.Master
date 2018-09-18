@@ -65,12 +65,14 @@
         </li>
           </ul>
           <ul class="navbar-nav ml-auto">
+         <li class="nav-item">
         
-      
-        <li class="nav-item">
-          <a class="nav-link" href="../../vistas/Login/Login.aspx">
-            <i class="fa fa-fw fa-sign-out"></i>Salir</a>
-        </li>
+             <asp:Label   runat="server" ID="lbUsuarios" CssClass="btn btn-primary"></asp:Label>
+           </li>
+              <li class="nav-item">
+              <asp:Button runat="server"  ID="lblSalir" CssClass="bnt badge-danger" Text="Salir" OnClick="lblSalir_Click"/>    
+                   </li>
+                  
       </ul>
     </div>
   </nav>

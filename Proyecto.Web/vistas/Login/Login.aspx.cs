@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Web;
 
 namespace Proyecto.Web.vistas.Login
 {
@@ -7,8 +7,21 @@ namespace Proyecto.Web.vistas.Login
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           // if (!IsPostBack)
-              //  ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Buen trabajo!', 'Se realizo proceso con exito!', 'success') </Script>");
+            //la primera ves que carga la pagina mostrar
+            //postBack=es una accion
+
+            if (!IsPostBack) {
+
+
+             if (Request.Cookies["cookieEmail"] !=null)
+               
+                txtemail.Text = Request.Cookies["cookieEmail"].Value.ToString();
+                 
+             }   
+            
+
+            // if (!IsPostBack)
+            //  ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Buen trabajo!', 'Se realizo proceso con exito!', 'success') </Script>");
 
 
         }
@@ -36,8 +49,38 @@ namespace Proyecto.Web.vistas.Login
                 Controllers.LoginController obloginController = new Controllers.LoginController();
 
                 bool blBandera = obloginController.getvalidarUsuarioController(obclsUsuarios);
-                if (blBandera)
-                    Response.Redirect("../Index/Index.aspx"); //redirecciono
+
+                if (blBandera) {
+
+                    Session["sessionEmail"] = txtemail.Text;
+
+                    if (CheckRecordar.Checked) { 
+
+                        //crear objeto cookie
+                        HttpCookie cookie = new HttpCookie("cookieEmail",txtemail.Text);
+
+                        //adicciono time de vida
+                        cookie.Expires = DateTime.Now.AddDays(2);
+
+                        //adicciono ala coleccion de cookie
+                        Response.Cookies.Add(cookie);
+
+                    }
+                    else
+                    {
+                        //crear objeto cookie
+                        HttpCookie cookie = new HttpCookie("cookieEmail", txtemail.Text);
+
+                        //cookie expira el dira de ayer
+                       cookie.Expires = DateTime.Now.AddDays(-1);
+                        Response.Cookies.Add(cookie);
+
+                    }
+
+             Response.Redirect("../Index/Index.aspx?stEmail="+txtemail.Text); //redirecciono y atrapo el coreo y lo pongo en la url
+                }
+
+
                 else throw new Exception("Usuario o clave incorrecta");
 
             }

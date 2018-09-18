@@ -51,7 +51,7 @@
                     <div class="form-group">
                         <div class="form-check">
                             <label class="form-check-label"/>
-                                  <asp:CheckBox ID="CheckRecordar" runat="server" Text="Recordar Password"></asp:CheckBox>
+                                  <asp:CheckBox ID="CheckRecordar" runat="server" Text="Recordar Email"></asp:CheckBox>
                                   
                             
                         </div>

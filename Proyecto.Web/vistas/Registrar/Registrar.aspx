@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registrar.aspx.cs" Inherits="Proyecto.Web.vistas.Registrar.Registrar" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registrar.aspx.cs" Inherits="Proyecto.Web.vistas.Registrar.Registrar" %>
 
 <!DOCTYPE html>
 
@@ -35,40 +36,31 @@
             <div class="card-header">Registrar cuenta</div>
             <div class="card-body">
                 <form id="form1" runat="server">
+                    <div class="form-group">
+
+                        <asp:Label ID="Lblnombre" runat="server" Text="Ingrese Nombre"></asp:Label>
+                        <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control"></asp:TextBox>
                     
                     
-                        <div class="form-group">
+                       <asp:Label ID="LblApellido" runat="server" Text="Ingrese Apellido"></asp:Label>
+                        <asp:TextBox ID="txtApellido" runat="server" CssClass="form-control"></asp:TextBox>
+                    </div>
+                     <div class="form-group">
 
                         <asp:Label ID="Lblemail" runat="server" Text="Email"></asp:Label>
-                        <asp:TextBox ID="txtemail" runat="server" CssClass="form-control"></asp:TextBox>
-                    </div>
-                    <div class="form-group">
+                        <asp:TextBox ID="Txteamil" runat="server" CssClass="form-control"></asp:TextBox>
+                     </div>
+                        
+                         <div class="form-group">
                        <asp:Label ID="Lblpassword" runat="server" Text="Password"></asp:Label>
-                        <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" ></asp:TextBox>
+                        <asp:TextBox ID="TxtPassword" runat="server" CssClass="form-control" TextMode="Password" ></asp:TextBox>
+
+                              <asp:Label ID="Lblconpasswor" runat="server" Text="Confirmar Password"></asp:Label>
+                        <asp:TextBox ID="Txtconpassword" runat="server" CssClass="form-control" TextMode="Password" ></asp:TextBox>
                     </div>
-
-                    <div class="form-group">
-
-            <asp:Label ID="LblNmbre"  runat="server" Text="Nombre:"></asp:Label>
-             <asp:TextBox ID="TextBox1"  runat="server"></asp:TextBox>
-                    </div>
-                        <div class="form-group">
-            <asp:Label ID="Label1"  runat="server" Text="Apellido:"></asp:Label>
-             <asp:TextBox ID="TextBox2"  runat="server"></asp:TextBox>
-            </div>
-                <div class="form-group">
-            <asp:Label ID="LblComision"  runat="server" Text="Comision:"></asp:Label>
-                    <asp:CheckBox ID="chlComision"  runat="server" Text="Si:"></asp:CheckBox>
-                       </div>
-                     <<div class="form-group">
-               <asp:Label ID="Lblgenero"  runat="server" Text="Genero:"></asp:Label>
-               <asp:DropDownList ID="ddlGenero"   runat="server">
-                   <asp:ListItem Value="1"  Text="Femenino:"></asp:ListItem>
-                   <asp:ListItem Value="2"  Text="Masculino:"></asp:ListItem>
-                   </asp:DropDownList>
-                           </div>  
-
-                          <asp:Button ID="btnAceptar" runat="server" CssClass="btn-primary btn-block" Text="Aceptar" OnClick="btnAceptar_Click" ></asp:Button>
+                        <asp:Button ID="btnRegistrar" runat="server" CssClass="btn-primary btn-block" Text="Registrar" OnClick="btnRegistrar_Click" ></asp:Button>
+                   
+                                   
                 </form>
                 <div class="text-center">
                     <a class="d-block small" href="../Login/Login.aspx">Pagina de inicio</a>
@@ -77,10 +69,10 @@
             </div>
         </div>
     </div>
-    
    </body>
 
 
 
 </html>
+
 

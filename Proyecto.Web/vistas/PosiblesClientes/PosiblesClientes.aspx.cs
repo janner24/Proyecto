@@ -35,9 +35,13 @@ namespace Proyecto.Web.vistas.PosiblesClientes
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
-            
-                getPosiblesCliente();
+            {
+                if (Session["sessionEmail"] == null)
+                                    
+              Response.Redirect("../Login/Login.aspx");
 
+                getPosiblesCliente();
+             }
             }
            
 

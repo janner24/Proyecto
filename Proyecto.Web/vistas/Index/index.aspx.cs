@@ -11,7 +11,13 @@ namespace Proyecto.Web.vistas.Index
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //123
+
+            string stEmail = string.Empty;//creo una variable vacia
+            if (!IsPostBack)
+            {
+                if (Request.QueryString["stEmail"] != null)
+                    stEmail = Request.QueryString["stEmail"].ToString();
+            }
         }
     }
 }
